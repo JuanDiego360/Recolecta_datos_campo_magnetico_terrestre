@@ -49,7 +49,8 @@ Para recopilar datos desde un dispositivo Android, siga estos pasos:
    - `pkg install python-numpy` (para instalar `numpy`)
    - `pkg install tur-repo` (para resolver posibles problemas al instalar `pandas`)
    - `pkg install python-pandas` (para instalar `pandas`)
-   - `pip list` (para verificar si los paquetes `numpy` y `pandas` se instalaron correctamente)
+   - `pip install requests` (para instalar `requests`)
+   - `pip list` (para verificar si los paquetes `numpy`, `pandas` y `requests` se instalaron correctamente)
    - `termux-setup-storage` (para acceder a los archivos del dispositivo desde Termux)
    - `ls` (debería aparecer un directorio llamado `storage`)
    - `cd storage` (para acceder al directorio `storage`)
@@ -67,3 +68,4 @@ Para recopilar datos desde un dispositivo Android, siga estos pasos:
 ## Contribuyentes:
 
 - Cristian Vargas (estudiante de física de la Universidad de Pamplona)
+- Johan Mantilla (estudiante de física de la Universidad de Pamplona)
