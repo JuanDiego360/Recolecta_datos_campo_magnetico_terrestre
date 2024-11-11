@@ -3,10 +3,10 @@
 
 * Años procesados
 - [X] 1965
-- [ ] 1966
+- [X] 1966
 - [X] 1967
 - [X] 1968
-- [ ] 1969
+- [X] 1969
 - [ ] 1970
 - [ ] 1971
 - [ ] 1972
@@ -55,6 +55,3 @@
 - [X] 2015
 - [X] 2016
 
-* Estadísticas
-- Años completados: 7 de 52
-- Porcentaje completado: 13%
