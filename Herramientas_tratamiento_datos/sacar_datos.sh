@@ -1,5 +1,8 @@
 #!/bin/bash
 Num=0
+Num_sobrescritos=0
+Num_omitidos=0
+
 # Directorio base (se obtiene la ruta actual automáticamente)
 directorio_base=$(pwd)
 
@@ -16,14 +19,39 @@ for archivo in "$directorio_base"/*.csv; do
 
     # Construimos la ruta del directorio destino
     directorio_final="$directorio_destino/datos_campo_magnetico_$ano/data$numero"
-    #echo "$directorio_final"
+    archivo_destino="$directorio_final/$(basename "$archivo")"
 
-    # Creamos el directorio si no existe
-    #mkdir -p "$directorio_final"
-
-    # Movemos el archivo al directorio destino
-    mv "$archivo" "$directorio_final"
-    ((Num=Num+1))
+    # Verificamos si el archivo ya existe en el destino
+    if [ -f "$archivo_destino" ]; then
+      echo "El archivo $(basename "$archivo") ya existe en el destino."
+      
+      # Comparamos los archivos para ver si son diferentes
+      if cmp -s "$archivo" "$archivo_destino"; then
+        echo "Los archivos son idénticos. Omitiendo..."
+        ((Num_omitidos=Num_omitidos+1))
+      else
+        echo "Los archivos son diferentes."
+        read -p "¿Desea sobrescribir el archivo existente? (s/n): " respuesta
+        if [[ $respuesta =~ ^[Ss]$ ]]; then
+          mv -f "$archivo" "$archivo_destino"
+          echo "Archivo sobrescrito."
+          ((Num_sobrescritos=Num_sobrescritos+1))
+          ((Num=Num+1))
+        else
+          echo "Operación cancelada para este archivo."
+          ((Num_omitidos=Num_omitidos+1))
+        fi
+      fi
+    else
+      # Si el archivo no existe, simplemente lo movemos
+      mv "$archivo" "$directorio_final"
+      ((Num=Num+1))
+    fi
   fi
 done
-echo "$Num archivos movidos"
+
+echo "Resumen de operaciones:"
+echo "$Num archivos movidos en total"
+echo "$Num_sobrescritos archivos sobrescritos"
+echo "$Num_omitidos archivos omitidos"
+
