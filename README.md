@@ -3,11 +3,11 @@
 
 Este proyecto se centra en la recopilación de datos del campo magnético terrestre con ayuda de una API de la NOAA (Administración Nacional Oceánica y Atmosférica). Puede acceder a la base de datos donde se recopilan los datos [aquí](https://data.aad.gov.au/metadata/records/AAS_4092_Geomagnetic_Field_Model).
 
-## actualización del repositorio
+## Actualización del repositorio
 
-- se agregaron nuevas herramientas más sofisticadas para el procesamiento de los datos en el directorio `Herramientas_tratamiento_datos`
-- se agregó una lista donde se puede ver la recolecta de los datos (`lista_complete.org`)
-- se agregó un actualizardor automático de `lista_complete.org` llamado `actualizar_lista.sh`
+- Se agregaron nuevas herramientas más sofisticadas para el procesamiento de los datos en el directorio `Herramientas_tratamiento_datos`
+- Se agregó una lista donde se puede ver la recolecta de los datos (`lista_complete.org`)
+- Se agregó un actualizardor automático de `lista_complete.org` llamado `actualizar_lista.sh`
 
 ## Instrucciones
 
