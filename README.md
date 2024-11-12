@@ -76,3 +76,5 @@ Para recopilar datos desde un dispositivo Android, siga estos pasos:
 - Cristian Vargas (estudiante de física de la Universidad de Pamplona)
 - Johan Mantilla (estudiante de física de la Universidad de Pamplona)
 - Oscar Esteban (estudiante de física de la Universidad de Pamplona)
+- Camilo Andres Villegas (estudiante de física de la Universidad de Pamplona)
+- Mileydi Cruz (estudiante de física de la Universidad de Pamplona)
