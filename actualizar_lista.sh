@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm lista_complete.org
+
 # Directorio base
 BASE_DIR="/home/juandiego/Documentos/proyecto_datos_campo_magnetico"
 LISTA_FILE="$BASE_DIR/lista_complete.org"
