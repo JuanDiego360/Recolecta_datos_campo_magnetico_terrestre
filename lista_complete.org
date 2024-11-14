@@ -1,5 +1,5 @@
 #+TITLE: Lista de verificación de datos magnéticos por año
-#+DATE: 2024-11-12
+#+DATE: 2024-11-13
 
 * Años procesados
 - [X] 1965
@@ -38,7 +38,7 @@
 - [ ] 1998
 - [ ] 1999
 - [X] 2000
-- [ ] 2001
+- [X] 2001
 - [ ] 2002
 - [ ] 2003
 - [ ] 2004
@@ -56,5 +56,5 @@
 - [X] 2016
 
 * Estadísticas
-- Años completados: 10 de 52
-- Porcentaje completado: 19%
+- Años completados: 11 de 52
+- Porcentaje completado: 21%
