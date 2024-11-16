@@ -78,3 +78,4 @@ Para recopilar datos desde un dispositivo Android, siga estos pasos:
 - Oscar Esteban (estudiante de física de la Universidad de Pamplona)
 - Camilo Andres Villegas (estudiante de física de la Universidad de Pamplona)
 - Mileydi Cruz (estudiante de física de la Universidad de Pamplona)
+- Dilmer Suarez (egresado de física de la universidad de pamplona)
